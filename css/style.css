@@ -132,11 +132,41 @@ main::before {
 
 .details .form-group {
   position: relative;
-  margin: 8px 4px;
-  padding: 4px 8px;
 }
 
-.details .form-group input .display-footer {
+.details .form-group input:not([type="date"]) {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  margin: 4px 0px 4px 0px;
+  padding: 4px 0px 4px 0px;
+  font-size: 18px;
+  border: 0px;
+  outline: none;
+  border-bottom: 2px solid #1faced;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+.details .form-group input:not([type="date"]) + label {
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  line-height: 18px;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.details .form-group input:focus ~ label,
+.details .form-group input:valid ~ label {
+  top: 0px;
+  font-weight: lighter;
+}
+
+.display-footer {
   position: absolute;
   left: 0;
   bottom: 0;
