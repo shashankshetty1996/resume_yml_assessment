@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <main>
+    <form id="form">
+      <!-- Login -->
+      <section class="display display-1">
+        <header class="display-header">
+          <h1 class="title">Resume Maker</h1>
+          <span data-close="display-1">&times;</span>
+        </header>
+        <div class="display-body">
+          <div class="login">
+            <div class="form-group">
+              <input type="email" id="username" name="username" required>
+              <i class="fa fa-user"></i>
+              <label for="username">Enter Email ID</label>
+            </div>
+            <div class="form-group">
+              <input type="password" id="password" name="password" required>
+              <i class="fa fa-lock"></i>
+              <label for="password">Enter Password</label>
+            </div>
+          </div>
+        </div>
+        <footer class="display-footer">
+          <button aria-label="next" data-target="display-2">next</button>
+        </footer>
+      </section>
+
+      <!-- Personal -->
+      <section class="display display-2">
+        <header class="display-header">
+          <h1 class="title">Personal Detail</h1>
+          <span data-close="display-1">&times;</span>
+        </header>
+        <div class="display-body">
+          <div class="details">
+            <div class="form-group">
+              <input type="text" id="firstname" name="firstname" required>
+              <label for="firstname">Enter your First Name</label>
+            </div>
+            <div class="form-group">
+              <input type="text" id="lastname" name="lastname" required>
+              <label for="lastname">Enter your Last Name</label>
+            </div>
+            <div class="form-group">
+              <input type="email" id="email" name="email" required>
+              <label for="email">Enter your Email ID</label>
+            </div>
+            <div class="form-group">
+              <input type="number" id="contact" name="contact" required>
+              <label for="contact">Enter your Contact Number</label>
+            </div>
+            <div class="form-group">
+              <input type="date" id="dob" name="dob" required>
+              <label for="dob">Enter your Date of birth</label>
+            </div>
+            <div class="form-group">
+              <textarea name="address" id="address" cols="30" rows="8" required></textarea>
+              <label for="address">Enter your Address</label>
+            </div>
+          </div>
+        </div>
+        <footer class="display-footer">
+          <button aria-label="back" data-target="display-1">back</button>
+          <button aria-label="next" data-target="display-3">next</button>
+        </footer>
+      </section>
+
+      <!-- Education -->
+      <section class="display display-3">
+        <header class="display-header">
+          <h1 class="title">Educational Details</h1>
+          <span data-close="display-1">&times;</span>
+        </header>
+        <div class="display-body">
+          <div class="education">
+            <fieldset>
+              <legend>School Details</legend>
+              <div class="form-group">
+                <input type="text" id="school-name" name="school-name" required>
+                <label for="school-name">Enter your School Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="school-board" name="school-board" required>
+                <label for="school-board">Enter your School Board</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="school-grade" name="school-grade" required>
+                <label for="school-grade">Enter your School Grade</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Pre University Details</legend>
+              <div class="form-group">
+                <input type="text" id="pu-name" name="pu-name" required>
+                <label for="pu-name">Enter your PU College Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="pu-board" name="pu-board" required>
+                <label for="pu-board">Enter your PU College Board</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="pu-grade" name="pu-grade" required>
+                <label for="pu-grade">Enter your PU College Grade</label>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>College Details</legend>
+              <div class="form-group">
+                <input type="text" id="College-name" name="College-name" required>
+                <label for="College-name">Enter your College Name</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="College-board" name="College-board" required>
+                <label for="College-board">Enter your College Board</label>
+              </div>
+              <div class="form-group">
+                <input type="text" id="College-grade" name="College-grade" required>
+                <label for="College-grade">Enter your College Grade</label>
+              </div>
+            </fieldset>
+          </div>
+        </div>
+        <footer class="display-footer">
+          <button aria-label="back" data-target="display-2">back</button>
+          <button aria-label="next" type="submit">Submit</button>
+        </footer>
+      </section>
+    </form>
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>

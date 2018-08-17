@@ -1,0 +1,194 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-image: url("https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-attachment: fixed;
+  background-origin: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+main::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.display {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 950px;
+  max-width: 90vw;
+  height: 450px;
+  background-color: aliceblue;
+  overflow: hidden;
+}
+
+.display-header {
+  height: 4.5em;
+  background-color: #1faced;
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.display-header .title {
+  display: inline-block;
+  line-height: 3em;
+  font-weight: 100;
+}
+
+.display-header span {
+  font-size: 1.5em;
+  cursor: pointer;
+  float: right;
+  margin: 1em;
+}
+
+.display-body {
+  position: relative;
+  height: calc(100% - 3.5em - 4.5em);
+}
+
+.login {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+}
+
+.login .form-group {
+  position: relative;
+  margin: 16px 8px;
+  padding: 8px 4px;
+}
+
+.login .form-group input {
+  position: relative;
+  width: 100%;
+  background-color: transparent;
+  margin: 4px 0px 4px 0px;
+  padding: 8px 0px 8px 0px;
+  font-size: 18px;
+  border: 0px;
+  outline: none;
+  text-indent: 35px;
+  border-bottom: 2px solid #1faced;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+}
+
+.login .form-group label {
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  color: #1faced;
+  line-height: 18px;
+  font-size: 16px;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.login .form-group input:focus ~ label,
+.login .form-group input:valid ~ label {
+  top: 0px;
+  font-weight: lighter;
+}
+
+.login .form-group input:valid ~ label {
+  color: #1faced;
+}
+
+.login .form-group i {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  font-size: 24px;
+  color: #1faced;
+  transition: 0.2s ease-in-out;
+  pointer-events: none;
+}
+
+.login .form-group input:valid ~ i {
+  color: #1faced;
+}
+
+.display-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3.5em;
+  width: 100%;
+  background-color: #1faced;
+}
+
+button[aria-label="next"] {
+  position: absolute;
+  right: 2em;
+  top: 0.5em;
+  bottom: 0.5em;
+  font-size: 14px;
+  height: 3em;
+  padding: 0.25em 2em;
+  outline: none;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button[aria-label="back"] {
+  position: absolute;
+  left: 2em;
+  top: 0.5em;
+  bottom: 0.5em;
+  font-size: 14px;
+  height: 3em;
+  padding: 0.25em 2em;
+  outline: none;
+  border: 0;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+button[aria-label]:hover {
+  background-color: #1faced;
+  color: #ffffff;
+}
+
+button[aria-label="next"]:hover {
+  right: 1em;
+}
+
+button[aria-label="back"]:hover {
+  left: 1em;
+}
+
+.display-1 {
+  z-index: 0;
+}
+
+.display-2 {
+  z-index: 0;
+}
+
+.display-3 {
+  z-index: 1;
+}
